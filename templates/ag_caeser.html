@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoCalci</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+
+</head>
+<body>
+    <header class="showcase">
+        <div class="menu">
+            <div class="title">MENU</div>
+            <ul class="nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/route/main1.html">Algorithms</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="/route/main2.html">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="showcase-top">
+            <img src="/img/2.png" ,align="Center" />
+        <div id="pricing-table" class="clear">
+            <div class="plan">
+                <h3 style="color:black">Encryption<span>E</span></h3>         
+                <ul>
+                    <li>Enter Plaintext</li>
+                    <li><input id="in" type ="text" placeholder = "Enter plain text..." /></li>
+                    <li>Enter Key</li>
+                    <li><input id="keyin" type ="number" placeholder = "Enter cipher key..." /></li>
+                </ul> 
+                <button class="signup" id = "encrypt">Encrypt</button>
+                <button class="signup" id = "decrypt">Decrypt</button>	
+            </div>
+                <div class="plan">
+                <h3 style="color:black">Decryption<span>D</span></h3>	
+                <ul>
+                    <li>Output</li>
+                    <li><p id="out">Output will appear here...</p></li>	
+                </ul>
+            </div> 	
+        </div>
+        <div id="pricing-table" class="clear">
+            <div class="plan1">
+                <h1 style="color:black">Additive Cipher</h1>	
+                <h2>Ceaser cipher technique is a monoalphabetic substitution cipher technique.<br>
+                    It uses a single bit fixed key of value 3 to encrypt or decrypt a message.<br>
+                    It follows the same steps as additive cipher technique.<br>
+                    After converting the plain text and the key to integers, it uses to following formulas to encrypt and decrypt the message:<br>
+                    Encryption: CT = (Pi + k) mod 26<br>
+                    Decryption: D = (CTi – k) mod 26<br>
+                    The integers are converted back to alphabets to get the encrypted/decrypted text.</h2>
+            </div>
+        </div>
+    </header>
+<script src="/js/caeser.js"></script>
+</body>
+</html>

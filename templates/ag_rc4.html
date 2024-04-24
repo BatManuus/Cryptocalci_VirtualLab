@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+  <title>CryptoCalci</title>
+  <script src="https://openlabyrinth.sgul.ac.uk/scripts/crypto-js/rollups/rc4.js"></script>
+</head>
+<body>
+  <header class="showcase">
+    <div class="menu">
+      <div class="title">MENU</div>
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/route/main1.html">Algorithms</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/route/main2.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+    <div class="showcase-top">
+        <img src="/img/2.png" ,align="Center" />
+    <div id="pricing-table" class="clear">
+        <div class="plan">
+            <h3 style="color:black">Encryption<span>E</span></h3>         
+            <ul>
+                <li>Enter Plaintext</li>	
+                <li><input id="rawdatarc4" type ="text" placeholder = "Enter plain text..." /></li>
+                <li>Enter Key/Password</li>
+                <li><input id="passwordrc4" type ="text" placeholder = "Enter cipher key..." /></li>	
+                <li>Encrypted data</li>
+                <li><h3 span id="displayrc4"></h3 span><br/></li>	
+                <button class="signup"id="encrbtnrc4">Encrypt</button>
+        </ul>
+        </div>
+            <div class="plan">
+            <h3 style="color:black">Decryption<span>D</span></h3>	
+            <ul>
+              <li>Encrypted String</li>	
+              <li><input id="endatarc4" type ="text" placeholder = "Enter plain text..." /></li>
+              <li>Enter Key/Password</li>
+              <li><input id="password1rc4" type ="text" placeholder = "Enter cipher key..." /></li>	
+              <li>Decrypted data</li>
+              <li><h3 span id="display1rc4"></h3 span><br/></li>	
+              <button class="signup" id="debtnrc4">Decrypt</button>
+            </ul>
+        </div> 	 	
+    </div>
+</header>
+
+
+  <script type="text/javascript" src="/js/rc4.js"></script>
+</body>
+</html>
+
+<!-- 
+Enter Plaintext: <textarea cols="30" rows="10" id="rawdatarc4"></textarea> 
+Key/Password:       <input type="text" id="passwordrc4"/>  
+Encrypted data: <span id="displayrc4"></span><br/>  
+<button type="button" id="encrbtnrc4">Encrypt</button><br><br><br>
+
+Encrypted String: <textarea name="" id="endatarc4" cols="30" rows="10"></textarea> 
+Key/Password:   <input type="text" id="password1rc4"/>  
+Decrypted data: <span id="display1rc4"></span><br/>  
+<button type="button" id="debtnrc4">Decrypt</button> -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+  <title>CryptoCalci</title>
+  <script src="https://openlabyrinth.sgul.ac.uk/scripts/crypto-js/rollups/tripledes.js"></script>
+</head>
+<body>
+  <header class="showcase">
+    <div class="menu">
+      <div class="title">MENU</div>
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/route/main1.html">Algorithms</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/route/main2.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+    <div class="showcase-top">
+        <img src="/img/2.png" ,align="Center" />
+    <div id="pricing-table" class="clear">
+        <div class="plan">
+            <h3 style="color:black">Encryption<span>E</span></h3>         
+            <ul>
+                <li>Enter Plaintext</li>	
+                <li><input id="rawdatades" type ="text" placeholder = "Enter plain text..." /></li>
+                <li>Enter Key/Password</li>
+                <li><input id="passworddes" type ="text" placeholder = "Enter cipher key..." /></li>	
+                <li>Encrypted data</li>
+                <li><h3 span id="displaydes"></h3 span><br/></li>	
+                <button class="signup"id="encrbtndes">Encrypt</button>
+        </ul>
+        </div>
+            <div class="plan">
+            <h3 style="color:black">Decryption<span>D</span></h3>	
+            <ul>
+              <li>Encrypted String</li>	
+              <li><input id="endatades" type ="text" placeholder = "Enter plain text..." /></li>
+              <li>Enter Key/Password</li>
+              <li><input id="password1des" type ="text" placeholder = "Enter cipher key..." /></li>	
+              <li>Decrypted data</li>
+              <li><h3 span id="display1des"></h3 span><br/></li>	
+              <button class="signup" id="debtndes">Decrypt</button>
+            </ul>
+        </div> 	 	
+    </div>
+</header>
+
+<script type="text/javascript" src="/js/des.js"></script>
+</body>
+</html>
+
+<!-- 
+Enter Plaintext: <textarea cols="30" rows="10" id="rawdatades"></textarea> 
+Key/Password:       <input type="text" id="passworddes"/>  
+Encrypted data: <span id="displaydes"></span><br/>  
+<button type="button" id="encrbtndes">Encrypt</button><br><br><br>
+
+Encrypted String: <textarea name="" id="endatades" cols="30" rows="10"></textarea> 
+Key/Password:   <input type="text" id="password1des"/>  
+Decrypted data: <span id="display1des"></span><br/>  
+<button type="button" id="debtndes">Decrypt</button> -->

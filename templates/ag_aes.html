@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+  <title>CryptoCalci</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js">  
+  </script> 
+</head>
+<body>
+  <header class="showcase">
+    <div class="menu">
+      <div class="title">MENU</div>
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/route/main1.html">Algorithms</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/route/main2.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+    <div class="showcase-top">
+        <img src="/img/2.png" ,align="Center" />
+    <div id="pricing-table" class="clear">
+        <div class="plan">
+            <h3 style="color:black">Encryption<span>E</span></h3>         
+            <ul>
+                <li>Enter Plaintext</li>	
+                <li><input id="rawdataaes" type ="text" placeholder = "Enter plain text..." /></li>
+                <li>Enter Key/Password</li>
+                <li><input id="passwordaes" type ="text" placeholder = "Enter cipher key..." /></li>	
+                <li>Encrypted data</li>
+                <li><h3 span id="displayaes"></h3 span><br/></li>	
+                <button class="signup"id="encrbtnaes">Encrypt</button>
+        </ul>
+        </div>
+            <div class="plan">
+            <h3 style="color:black">Decryption<span>D</span></h3>	
+            <ul>
+              <li>Encrypted String</li>	
+              <li><input id="endataaes" type ="text" placeholder = "Enter plain text..." /></li>
+              <li>Enter Key/Password</li>
+              <li><input id="password1aes" type ="text" placeholder = "Enter cipher key..." /></li>	
+              <li>Decrypted data</li>
+              <li><h3 span id="display1aes"></h3 span><br/></li>	
+              <button class="signup" id="debtnaes">Decrypt</button>
+            </ul>
+        </div> 	 	
+    </div>
+</header>
+<script type="text/javascript" src="/js/aes.js"></script>
+</body>
+</html>

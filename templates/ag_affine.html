@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoCalci</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+  <script src="/js/affine.js"></script>
+
+</head>
+<body>
+    
+    <header class="showcase">
+        <div class="menu">
+            <div class="title">MENU</div>
+            <ul class="nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/route/main1.html">Algorithms</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="/route/main2.html">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="showcase-top">
+            <img src="/img/2.png" ,align="Center" />
+   
+        <div id="pricing-table" class="clear">
+            <div class="plan">
+                <h3 style="color:black">Encryption<span>E</span></h3>         
+                <form name="rail"><table cellpadding="10">
+                    <tr>Enter Plaintext</tr><br><br>
+                    <tr><input cols="20" rows="8" name="plaintext" onKeyUp="encodedtext.value=encode(plaintext.value,a.value,b.value);"></input></tr><br>
+                    <tr><td style="text-align:center;">
+                        Please select the Additive key:<br>
+                        <select name="b">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                        </select>
+                    </td></tr>
+                    <tr><td style="text-align:center;" >
+                        Please select the Multiplicative Key:<br>
+                        <select name="a">
+                          <option value="1">1</option>
+                          <option value="3">3</option>
+                          <option value="5">5</option>
+                          <option value="7">7</option>
+                          <option value="9">9</option>
+                          <option value="11">11</option>
+                          <option value="15">15</option>
+                          <option value="17">17</option>
+                          <option value="19">19</option>
+                          <option value="21">21</option>
+                          <option value="23">23</option>
+                          <option value="25">25</option>
+                        </select>
+                    </td></tr>
+                 </table>
+            </div>
+                <div class="plan">
+                <h3 style="color:black">Decryption<span>D</span></h3>	
+                <tr>
+                    <td style="text-align:center;">Encoded Message :</td><br><br><br><br>
+                    <td>
+                    <textarea cols="30" rows="5" name="encodedtext" onKeyUp="plaintext.value=decode(encodedtext.value,a.value,b.value);"></textarea>
+                    </td>
+                    </tr>
+            </div> 	
+        </div>
+        <div id="pricing-table" class="clear">
+            <div class="plan1">
+                <h1 style="color:black">Affine Cipher</h1>	
+                <h2>Affine cipher technique is a monoalphabetic substitution cipher technique.<br>
+                    It is hybrid form of multiplicative and additive.<br>
+                    It uses a single bit key (k) to encrypt or decrypt a message.<br>
+                    It uses pair of keys(Key1 & Key2). Where Key1 is multiplicative key and Key2 is 
+                    additive key.<br>
+                    After converting the plain text and the key to integers, it uses to following formulas to 
+                    encrypt and decrypt the message:<br>
+                    Encryption: CT = [(Pi * k1 )+ k2] mod 26<br>
+                    Decryption: D = [(CTi – k2) * (k1)^-1]mod 26<br>
+                    Where k1<br>
+                    -1 is inverse of the multiplicative key.<br>
+                    The integers are converted back to alphabets to get the encrypted/decrypted text.</h2>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

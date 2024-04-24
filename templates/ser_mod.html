@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoCalci</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="/css/common.css">
+
+</head>
+<body>
+    <header class="showcase">
+        <div class="menu">
+            <div class="title">MENU</div>
+            <ul class="nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/route/main1.html">Algorithms</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="/route/main2.html">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="showcase-top">
+            <img src="/img/2.png" ,align="Center" />
+        <div id="pricing-table" class="clear">
+            <div class="plan1">
+                <h3 style="color:black">Mod Caculator<span>M</span></h3>         
+                <ul>
+                    <li>Consider: (a) mod (b)</li>
+                    <li><label for="dividend">a=</label></li>
+                    <li><input id="dividend"></li>
+                    <li><label for="divisor">b=</label></li>
+                    <li><input id="divisor"></li>
+                    <li><button class="signup" id="calcBtn">Calculate</button></li>
+                    <li><p>Result is= <span id="result"></span></p></li>
+                </ul> 
+                
+            </div>
+        </div>
+    </header>
+    <script>
+        // Your modulo function
+        function myModulo(a,b) {
+            return a % b;
+        };
+
+        // 
+        var calcBtn = document.getElementById("calcBtn");
+        var resultElement = document.getElementById("result");
+
+        // Set onclick event to run the Mod and update the results
+        calcBtn.onclick = function(){
+            // Get values
+            var dividend = document.getElementById("dividend").value;
+            var divisor = document.getElementById("divisor").value;
+
+            // Run Modulo function
+            var modResult = myModulo(dividend, divisor);
+
+            // Update Result
+            resultElement.innerText = modResult;
+
+        }
+
+    </script>
+</body>
+</html>
